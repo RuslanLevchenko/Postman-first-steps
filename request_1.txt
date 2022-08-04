@@ -7,7 +7,7 @@ var Kyiv = JSON.parse(responseBody);
 
 
 pm.test("Check name", function () {
-    pm.expect(Kyiv.name).to.eql("Oleksandr");
+    pm.expect(Kyiv.name).to.eql("Ruslan");
 });
 
 pm.test("Check age", function () {
