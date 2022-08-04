@@ -1,0 +1,13 @@
+var Yolochka = JSON.parse(responseBody);
+var salary = 1*Yolochka.salary[1]
+
+var arr_len = salary.lenght;
+
+console.log("arr_len = " + arr_len)
+
+pm.test("Your test name", function () {
+    
+    pm.expect(salary).to.eql(200000);
+});
+
+pm.environment.set("salary_1", salary);
