@@ -1,0 +1,15 @@
+var Yolochka = pm.response.json();
+
+let resp_name = Yolochka.name
+let resp_age = Yolochka.age
+//console.log("resp_name = " +  resp_name)
+//console.log("resp_age = " +  resp_age)
+
+pm.test("Check age", function () {
+    pm.expect(32).to.eql(resp_age);
+});
+
+
+pm.test("Check name", function () {
+    pm.expect(resp_name).to.eql("Ruslan");
+});
