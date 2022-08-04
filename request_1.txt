@@ -1,0 +1,23 @@
+pm.test("Status code is 200", function () {
+    pm.response.to.have.status(200);
+});
+
+var Kyiv = pm.response.json();
+var Kyiv = JSON.parse(responseBody);
+
+
+pm.test("Check name", function () {
+    pm.expect(Kyiv.name).to.eql("Oleksandr");
+});
+
+pm.test("Check age", function () {
+    pm.expect(Kyiv.age).to.eql("32");
+});
+
+pm.test("Check salary", function () {
+    pm.expect(Kyiv.salary).to.eql(10000);
+});
+
+
+let resp_family = Kyiv.family
+console.log("resp_family = " + resp_family)
