@@ -1,0 +1,15 @@
+{
+    "age": "32",
+    "family":
+    {
+        "pets": {
+            "cat": {
+                "age": 4,
+                "name": "Leo"
+            },
+            
+        "u_salary_1_5_year": 40000
+    },
+    "name": "Ruslsn",
+    "salary": 10000
+}
